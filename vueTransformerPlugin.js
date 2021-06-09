@@ -24,7 +24,7 @@ if (reactNativeMinorVersion >= 59) {
     }
   };
 }
-var vueExtensions = ["vue"]; // <-- Add other extensions if needed.
+var vueExtensions = ["vue", "onsenui"]; // <-- Add other extensions if needed.
 
 module.exports.transform = function({ src, filename, options }) {
   if (vueExtensions.some(ext => filename.endsWith("." + ext))) {
